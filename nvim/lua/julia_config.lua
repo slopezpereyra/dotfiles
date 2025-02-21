@@ -12,21 +12,21 @@
 --    vim.cmd("buffer #")
 --end
 --
-function SetJuliaRepl()
-    -- Switch to buffer named 'Repl julia' and keep it
-    vim.cmd("keep Repl julia")
-
-    -- Write the buffer
---   vim.cmd("write")
+--function SetJuliaRepl()
+--    -- Switch to buffer named 'Repl julia' and keep it
+--    vim.cmd("keep Repl julia")
 --
---    -- Move to the previous window
---   vim.cmd("normal! \\<C-w>\\<C-r>")
+--    -- Write the buffer
+----   vim.cmd("write")
+----
+----    -- Move to the previous window
+----   vim.cmd("normal! \\<C-w>\\<C-r>")
+--
+--    -- Check if Manifest.toml and Project.toml exist, if not, set Julia environment
+----    if not (vim.fn.filereadable("Manifest.toml") and vim.fn.filereadable("Project.toml")) then
+----        SetJuliaEnvironment()
+-- --   end
+--end
 
-    -- Check if Manifest.toml and Project.toml exist, if not, set Julia environment
---    if not (vim.fn.filereadable("Manifest.toml") and vim.fn.filereadable("Project.toml")) then
---        SetJuliaEnvironment()
- --   end
-end
-
-vim.api.nvim_command("autocmd BufRead,BufNewFile *.jl lua SetJuliaRepl()")
+--vim.api.nvim_command("autocmd BufRead,BufNewFile *.jl lua SetJuliaRepl()")
 

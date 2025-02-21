@@ -130,15 +130,19 @@ local cmp = require'cmp'
   require('lspconfig')['julials'].setup {
     capabilities = capabilities
   }
-  require('lspconfig')['pyright'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['r_language_server'].setup {
-    capabilities = capabilities
-  }
-  require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
-  }
+--  require('lspconfig')['pyright'].setup {
+--    capabilities = capabilities,
+--    init_options = {
+--        preferences = {
+--            disableSuggestions = true,
+--        }
+--    }
+--  }
+--  require('lspconfig')['r_language_server'].setup {
+--    capabilities = capabilities
+--  }
+
+
 
 -- If you want insert `(` after select function or method item
 local cmp_autopairs = require('nvim-autopairs.completion.cmp')

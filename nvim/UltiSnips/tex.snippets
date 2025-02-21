@@ -54,6 +54,31 @@ snippet secornament "Section prnament" iA
 \end{tikzpicture}
 endsnippet
 
+context "math()" 
+snippet fot "First order theory" iA 
+(\Sigma, \tau)$1
+endsnippet
+
+context "math()"
+snippet ftype "First order type" iA 
+(\mathcal{C}, \mathcal{F}, \mathcal{R}, a)$1
+endsnippet
+
+context "math()" 
+snippet iA "First order theory" iA 
+^{\textbf{A}} $1
+endsnippet
+
+context "math()"
+snippet el "ell" iA 
+\ell$1
+endsnippet
+
+context "math()"
+snippet scheme "Scheme" iA 
+(\mathcal{G}, \mathcal{E}, \mathcal{D})$1
+endsnippet
+
 context "math()"
 snippet tau "Tau" iA 
 \tau$1
@@ -62,6 +87,12 @@ endsnippet
 context "math()"
 snippet aS "Assignment" iA 
 [\overrightarrow{a}]$1
+endsnippet
+
+
+context "math()"
+snippet bt "Bowtie" iA 
+\bowtie 
 endsnippet
 
 context "math()"
@@ -352,10 +383,6 @@ snippet LL "Bracket" iA
 \\Lambda 
 endsnippet
 
-context "math()"
-snippet pro "Program set" iA
-Pro^{\Sigma}
-endsnippet 
 
 snippet aa "Alpha" iA 
 \\alpha
@@ -571,9 +598,11 @@ snippet xA "(x, alpha)" iA
 (\vec{x}, \vec{\alpha}) 
 endsnippet
 
-snippet vd "vdash" iA 
-\vdash 
+
+snippet xY "(x, alpha)" iA 
+(\vec{x}, \vec{y}) 
 endsnippet
+
 
 context "math()"
 snippet dar "Down arrow logics" iA 
@@ -727,6 +756,10 @@ snippet lr3 "left\{ right\}" iA
 \left\\{ ${1:${VISUAL}} \right\\} $0
 endsnippet
 
+snippet lr| "\left| right|" iA
+\left| ${1:${VISUAL}} \right| $0
+endsnippet
+
 snippet lr2 "left[ right]" iA
 \left[ ${1:${VISUAL}} \right] $0
 endsnippet
@@ -758,8 +791,8 @@ snippet limsup "limsup" w
 \limsup_{${1:n} \to ${2:\infty}} 
 endsnippet
 
-snippet XX "product" w
-\prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}} $0
+snippet prod "product" w
+\prod_{${1:i=${2:1}}}^{${3:\infty}} ${4:${VISUAL}} $0
 endsnippet
 
 snippet part "d/dx" w
@@ -1082,9 +1115,6 @@ snippet case "cases" wA
 \end{cases}
 endsnippet
 
-snippet SI "SI" iA
-\SI{$1}{$2}
-endsnippet
 
 snippet bigfun "Big function" iA
 \begin{align*}
